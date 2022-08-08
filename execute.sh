@@ -1,4 +1,5 @@
 git pull
+ghdl -a dff.vhd
 ghdl -a tc.vhd
 ghdl -a tc_tb.vhd
 ghdl -e tc_tb
