@@ -16,14 +16,14 @@ architecture arch_tc_tb of tc_tb is
 begin 
     map0 : tc port map (cls_s,rst_s,G_s,Y_s,R_s);
 clocking : process begin
-    clk_s <= '0'
+    clk_s <= '0';
     wait for 10 ns;
     clk_s <= '1';
     wait for 20 ns;
 end process;
 
 reseting : process begin
-    rst_s <= '1'
+    rst_s <= '1';
     wait for 5 ns;
     rst_s <= '0';
     wait for 995 ns;
