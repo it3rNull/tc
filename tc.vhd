@@ -12,7 +12,7 @@ architecture arch_tc of tc is
     signal en : std_logic;
 
     component dff is
-        port( d,en,clk,rst : in std_logic;
+        port( d,en,rst,clk : in std_logic;
                 q : out std_logic);
     end component dff;
 
