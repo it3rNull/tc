@@ -26,5 +26,9 @@ begin
     yin <= gout and not yout and not rout;
     rin <= (not gout and not yout and not rout) or (not gout and yout and not rout);
 
+    gin <= gout;
+    yin <= yout;
+    rin <= yout;
+
 end architecture arch_tc;
 
