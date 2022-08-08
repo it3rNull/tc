@@ -14,7 +14,7 @@ architecture arch_tc_tb of tc_tb is
     end component;
 
 begin 
-    map0 : tc port map (cls_s,rst_s,G_s,Y_s,R_s);
+    map0 : tc port map (clk_s,rst_s,G_s,Y_s,R_s);
 clocking : process begin
     clk_s <= '0';
     wait for 10 ns;
