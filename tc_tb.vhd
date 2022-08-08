@@ -19,7 +19,7 @@ clocking : process begin
     clk_s <= '0';
     wait for 10 ns;
     clk_s <= '1';
-    wait for 20 ns;
+    wait for 10 ns;
 end process;
 
 reseting : process begin
@@ -29,3 +29,4 @@ reseting : process begin
     wait for 995 ns;
 end process;
 
+end architecture arch_tc_tb;
